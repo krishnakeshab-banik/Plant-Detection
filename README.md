@@ -2,30 +2,79 @@
 A deep learning-based computer vision project to detect and classify plant species using the YOLOv8 model. The model was trained on a custom Roboflow dataset with the aim of accurately detecting common indoor plants.
 
 This project was created as part of a club initiative to experiment with object detection models and custom datasets.
-# Dataset
+# 🚀 Features
+✅ Custom-trained YOLOv8 model
+✅ Detects multiple types of indoor plants
+✅ Lightweight and efficient for real-time use
+✅ Ready-to-use for further finetuning, validation, or deployment
+✅ Outputs include predictions, validation plots (confusion matrix, PR curve, F1 curve)
+
+
+# 📂  Dataset
 Source: Dataset- https://universe.roboflow.com/krishna-1l7vd/plant-detection-926d9/dataset/1
 
-Format: YOLOv8
+Format: YOLO11n
 
 Version: 1
 
 Classes:
 
-Tulsi
+=>Money Plant
 
-Money Plant
+=>Aloe Vera
 
-Aloe Vera
+=>Rattlesnake Plant
 
-Rattlesnake Plant
-
-Begonia
+=>Begonia
 
 👉 Annotations were carefully prepared. Some classes such as Aloe Vera required improved augmentation strategies due to slightly lower detection scores.
 
+# 🧠 Model
+Model Used: YOLO11n (YOLO11n nano variant for lightweight fast inference)
+
+Framework: Ultralytics YOLOv8 (Python 3.11, Torch 2.6, CUDA on Tesla T4)
+
+Epochs: 15
+
+Image Size: 640×640
+
+Best Weights File: best.pt (saved automatically by Ultralytics YOLO11n after training)
+
+# 📂 Outputs
+🔹 Best weights: saved at runs/detect/train/weights/best.pt
+
+🔹 Validation results: plots saved under runs/detect/train/
+
+   confusion_matrix.png
+
+   PR_curve.png
+
+   F1_curve.png
+
+🔹 Inference predictions: output images saved under runs/detect/predict*/
 
 
-Dataset- https://universe.roboflow.com/krishna-1l7vd/plant-detection-926d9/dataset/1
+# 📝 Insights:
+
+Begonia has excellent accuracy – both bounding box and confidence levels are top-tier.
+
+Aloe Vera has slightly lower scores — may need better annotation or more diverse images.
+
+Money Plant has good detection but lower mAP@0.95 – bounding box placement could be improved.
+
+Rattlesnake Plant is well detected with strong precision and decent generalization.
+
+# 💾 Download
+➡ Download best.pt 
+➡ Download outputs: You can zip and download runs/detect/ folder for all results
+
+# 📦 Installation
+
+```bash
+pip install ultralytics
+pip install roboflow
+
+
 
 ![WhatsApp Image 2025-06-16 at 17 21 15_ef6fc9bd](https://github.com/user-attachments/assets/fc8d2176-cc77-43bb-be93-72302c3bef35)
 
