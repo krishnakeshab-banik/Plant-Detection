@@ -1,4 +1,30 @@
-# Plant-Detection
+# Plant-Detection using YOLOn11
+A deep learning-based computer vision project to detect and classify plant species using the YOLOv8 model. The model was trained on a custom Roboflow dataset with the aim of accurately detecting common indoor plants.
+
+This project was created as part of a club initiative to experiment with object detection models and custom datasets.
+# Dataset
+Source: Dataset- https://universe.roboflow.com/krishna-1l7vd/plant-detection-926d9/dataset/1
+
+Format: YOLOv8
+
+Version: 1
+
+Classes:
+
+Tulsi
+
+Money Plant
+
+Aloe Vera
+
+Rattlesnake Plant
+
+Begonia
+
+👉 Annotations were carefully prepared. Some classes such as Aloe Vera required improved augmentation strategies due to slightly lower detection scores.
+
+
+
 Dataset- https://universe.roboflow.com/krishna-1l7vd/plant-detection-926d9/dataset/1
 
 ![WhatsApp Image 2025-06-16 at 17 21 15_ef6fc9bd](https://github.com/user-attachments/assets/fc8d2176-cc77-43bb-be93-72302c3bef35)
