@@ -4,9 +4,13 @@ A deep learning-based computer vision project to detect and classify plant speci
 This project was created as part of a club initiative to experiment with object detection models and custom datasets.
 # 🚀 Features
 ✅ Custom-trained YOLOv8 model
+
 ✅ Detects multiple types of indoor plants
+
 ✅ Lightweight and efficient for real-time use
+
 ✅ Ready-to-use for further finetuning, validation, or deployment
+
 ✅ Outputs include predictions, validation plots (confusion matrix, PR curve, F1 curve)
 
 
