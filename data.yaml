@@ -1,0 +1,13 @@
+train: ../train/images
+val: ../valid/images
+test: ../test/images
+
+nc: 4
+names: ['Aloe Vera', 'Begonia', 'Money Plant', 'Rattlesnake Plant']
+
+roboflow:
+  workspace: krishna-1l7vd
+  project: plant-detection-926d9
+  version: 1
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/krishna-1l7vd/plant-detection-926d9/dataset/1
